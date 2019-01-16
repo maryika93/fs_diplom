@@ -1,0 +1,93 @@
+html {
+     line-height: 1.15; /* 1 */
+     -webkit-text-size-adjust: 100%; /* 2 */
+     font-family: 'Roboto', sans-serif;;
+     font-size: 62.5%;
+ }
+
+body {
+    margin: 0;
+    background-image: url('../i/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: right;
+}
+
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page-header {
+    padding-top: 10rem;
+    padding-bottom: 2rem;
+    width: 100%;
+    text-align: center;
+}
+
+.page-header__title {
+    margin: 0;
+    font-weight: 900;
+    font-size: 3.4rem;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.page-header__title_span {
+    font-weight: 100;
+}
+
+h2 {
+    width: 100%;
+    font-size: 3em;
+    text-align: center;
+    font-weight: 900;
+    color: #FFFFFF;
+}
+
+.tichet__check {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    background-color: rgba(192, 192, 192, 0.55);
+    position: relative;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60em
+}
+
+.ticket__info-wrapper {
+    padding-left: 12rem;
+    padding-right: 1.5rem;
+    background-color: rgba(192, 192, 192, 0.55);
+    position: relative;
+    margin-top: 6px;
+    padding-top: 2rem;
+    padding-bottom: 3rem
+}
+
+input {
+    width:25em;
+    margin-top: 6px;
+    padding: 12px 27px;
+}
+
+.input_submit {
+    display: block;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.24), 0px 0px 3px rgba(0, 0, 0, 0.12);
+    border: none;
+    padding: 12px 27px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.33rem;
+    background-color: #16A6AF;
+    color: #FFFFFF;
+}

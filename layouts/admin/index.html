@@ -8,6 +8,7 @@
   <title>ИдёмВКино</title>
   <link rel="stylesheet" href="CSS/normalize.css">
   <link rel="stylesheet" href="CSS/styles.css">
+  <link rel="stylesheet" href="CSS/popup.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
 </head>
 
@@ -26,14 +27,36 @@
       <div class="conf-step__wrapper">
         <p class="conf-step__paragraph">Доступные залы:</p>
         <ul class="conf-step__list">
+          <form action="#del">
           <li>Зал 1
             <button class="conf-step__button conf-step__button-trash"></button>
           </li>
           <li>Зал 2
             <button class="conf-step__button conf-step__button-trash"></button>
           </li>
+          </form>
         </ul>
+        <form action="#new">
         <button class="conf-step__button conf-step__button-accent">Создать зал</button>
+        </form>
+
+        <a href="#x" class="overlay" id="new"></a>
+          <div class="popup">
+          <form class="new_conf" method="post" action="" enctype="multipart/form-data">
+            <input class="input" type="text" placeholder="Название зала" name="name">
+            <input class="input_submit" type="submit" name="inpAdd" value="Добавить зал">
+            <input class="input_submit close" type="submit" name="inpClose" value="Отменить">
+          </form>
+        </div>
+
+        <a href="#x" class="overlay" id="del"></a>
+        <div class="popup">
+          <form class="del_conf" method="post" action="" enctype="multipart/form-data">
+            <input class="input_submit" type="submit" name="inpDel" value="Удалить">
+            <input class="input_submit close" type="submit" name="inpClose" value="Отменить">
+          </form>
+        </div>
+
       </div>
     </section>
     
@@ -176,8 +199,20 @@
       </header>
       <div class="conf-step__wrapper">
         <p class="conf-step__paragraph">
+        <form action="#add">
           <button class="conf-step__button conf-step__button-accent">Добавить фильм</button>
+      </form>
         </p>
+
+        <a href="#x" class="overlay" id="add"></a>
+        <div class="popup">
+          <form class="new_conf" method="post" action="" enctype="multipart/form-data">
+            <input class="input" type="text" placeholder="Название фильма" name="filmName">
+            <input class="input_submit" type="submit" name="inputAdd" value="Добавить фильм">
+            <input class="input_submit close" type="submit" name="inputClose" value="Отменить">
+          </form>
+        </div>
+
         <div class="conf-step__movies">
           <div class="conf-step__movie">
             <img class="conf-step__movie-poster" alt="poster" src="i/poster.png">
