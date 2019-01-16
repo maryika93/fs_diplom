@@ -80,3 +80,12 @@ input {
      top: 2px;
      box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
  }
+
+div.conf-step__movie{
+    cursor: move;
+    position: absolute;
+    z-index: 1;
+}
+div.conf-step__movie.moving{
+    pointer-events: none;
+}
